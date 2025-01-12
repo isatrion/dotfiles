@@ -23,8 +23,9 @@ font pango:monospace 8
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+exec --no-startup-id /home/riosat/.config/i3/scripts/monitor.sh
+exec_always feh --bg-scale $HOME/Downloads/wall.jpg
 exec --no-startup-id xauth generate $DISPLAY . trusted
-exec_always feh --bg-scale $HOME/Downloads/wall1.jpg
 exec --no-startup-id picom &
 
 
@@ -188,8 +189,8 @@ mode "resize" {
 
 # Colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #c6c900 #c6c900 #ffffff #c6c900   #c6c900
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused          #bfbfbf #bfbfbf #bfbfbf #bfbfbf   #bfbfbf
+client.focused_inactive #bfbfbf #bfbfbf #bfbfbf #ffffff   #bfbfbf
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c

@@ -8,4 +8,4 @@ set fish_greeting
 # Set up fzf key bindings
 fzf --fish | source
 
-fastfetch --logo suse_small
+fastfetch --logo arch-linux-small
