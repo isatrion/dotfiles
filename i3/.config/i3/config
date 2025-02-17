@@ -28,6 +28,7 @@ exec --no-startup-id /home/riosat/.config/i3/scripts/monitor.sh
 exec_always feh --bg-scale $HOME/Downloads/wall.jpg
 exec --no-startup-id xauth generate $DISPLAY . trusted
 exec --no-startup-id picom &
+exec --no-startup-id flameshot &
 
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
